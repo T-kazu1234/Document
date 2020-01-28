@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>oes.enchant.js</title>
+<style type="text/css">
+body,textarea {
+	font-family: "メイリオ",Meiryo,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+input,select {
+	font-family: Arial,"ＭＳ Ｐゴシック","MS PGothic",sans-serif;
+}
+h2:before {
+	content: "\2731";
+	color: #f90;
+}
+a {color:#06c;}
+dl dt {font-weight:bold; margin-left:1em;}
+dl dd {margin-left:2em; margin-bottom:1em;}
+pre {margin:0; padding: 0 0 0 0.5em; border-left: 3px solid #3c3;}
+</style>
+</head>
+<body>
+
+<h2>oes.enchant.jsとは？</h2>
+oes.enchant.js はノベルゲーム向けの機能を提供する enchant.js のプラグインです。<br>
+<a href="http://enchantjs.com" target="_blank">enchant.js</a> は HTML5 + JavaScript なゲームエンジンです。
+
+<h2>注意</h2>
+<b>enchant.js v0.6 では描画エンジンが変更されるため、本プラグインは動作しません！</b><br>
+v0.5以下を使用してください。<br>
+v0.6については<a href="http://wise9.jp/archives/8012" target="_blank">こちら</a>を参照してください。
+
+<h2>同梱ファイルおよびフォルダ</h2>
+<dl>
+<dt>enchant.js, enchant.min.js, tl.enchant.js</dt>
+<dd>
+本プラグインの動作を確認するのに使用した enchant.js および関連ファイル。
+</dd>
+<dt>ex.enchant.js, ex.enchant.min.js</dt>
+<dd>
+enchant.jsのクラスをprototype拡張した追加機能のプラグイン。<br>ex.enchant.min.js は ex.enchant.js の内容を短く縮めたファイル。
+</dd>
+<dt>oes.enchant.js, oes.enchant.min.js</dt>
+<dd>
+ノベルゲーム向けの機能を提供するプラグイン。<br>oes.enchant.min.js は oes.enchant.js の内容を短く縮めたファイル。
+</dd>
+<dt>oesUtil.enchant.js</dt>
+<dd>
+セーブ／ロード画面やログ画面などのユーティリティ機能を提供するプラグイン。
+</dd>
+<dt>doc/</dt>
+<dd>
+ex.enchant.js 及び oes.enchant.js の<a href="doc/index.html" target="_blank">APIリファレンス</a>。
+</dd>
+</dl>
+
+<h2>使用方法</h2>
+htmlの&lt;script&gt;タグで組み込んでください。
+<dl>
+<dt>例</dt>
+<dd>
+<pre>
+&lt;script type=&quot;text/javascript&quot; src=&quot;enchant.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;tl.enchant.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;ex.enchant.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;oes.enchant.min.js&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot; src=&quot;oesUtil.enchant.js&quot;&gt;&lt;/script&gt;
+</pre>
+</dd>
+</dl>
+
+<h2>サンプル</h2>
+ノベルゲーム向け機能テストのサンプルを<a href="http://www20.atpages.jp/katwat/oes_enchant_test1/menu.html" target="_blank">ここ</a>で試すことができます。<br>
+サンプルのソースはそれぞれ以下で参照できます。エンコードはUTF-8です。<br>
+<a href="http://www20.atpages.jp/katwat/oes_enchant_test1/test1.js" target="_blank">機能テスト</a>、実践的サンプル<a href="http://www20.atpages.jp/katwat/oes_enchant_test1/sample1.js" target="_blank">「紹介」</a>、<a href="http://www20.atpages.jp/katwat/oes_enchant_test1/sample2.js" target="_blank">「ノベル」</a>、<a href="http://www20.atpages.jp/katwat/oes_enchant_test1/sample3.js" target="_blank">「脱出」</a>風。<br>
+視覚表現の多くはCSSで実現しています。<br>
+CSSのソースはそれぞれ以下で参照できます。<br>
+<a href="http://www20.atpages.jp/katwat/oes_enchant_test1/test1.css" target="_blank">機能テスト</a>、実践的サンプル<a href="http://www20.atpages.jp/katwat/oes_enchant_test1/sample1.css" target="_blank">「紹介」</a>、<a href="http://www20.atpages.jp/katwat/oes_enchant_test1/sample2.css" target="_blank">「ノベル」</a>、<a href="http://www20.atpages.jp/katwat/oes_enchant_test1/sample3.css" target="_blank">「脱出」</a>風。<br>
+
+<h2>ライセンス</h2>
+ex.enchant.js は<a href="http://mozilla.org/MPL/2.0/" target="_blank">MPL2.0ライセンス</a>、<br>
+oes.enchant.js は<a href="http://mozilla.org/MPL/2.0/" target="_blank">MPL2.0ライセンス</a>、<br>
+oesUtil.enchant.js は<a href="http://www.opensource.org/licenses/mit-license.php">MITライセンス</a>です。
+
+<h2>履歴</h2>
+
+<dl>
+<dt>ex.enchant.js</dt>
+<dd>
+
+<dl>
+<dt>0.1 (2012/6/28)</dt>
+<dd>enchant.jsのクラスをprototype拡張で機能追加した部分をoes.enchant.jsから抽出して分離。</dd>
+</dl>
+
+</dd>
+</dl>
+
+<dl>
+<dt>oes.enchant.js</dt>
+<dd>
+
+<dl>
+<dt>0.4.9 (2013/3/2)</dt>
+<dd>選択肢の処理において、タッチとマウスイベント反応が排他の関係になっていた。ブラウザが対応していれば、マウスに加えてタッチイベントに反応するように修正した。</dd>
+<dt>0.4.8 (2012/11/26)</dt>
+<dd>ブラウザによっては例外を起こしてしまうので、サウンドのボリューム値は０～１の範囲内に収まるようにした。</dd>
+<dt>0.4.7 (2012/8/8)</dt>
+<dd>animation.enchant.jsから替わったtl.enchant.jsに対応させた。<br>一部の機能をex.enchant.jsとして正式に独立させた。</dd>
+<dt>0.4.6 (2012/6/7)</dt>
+<dd>選択肢の選択後の余韻に対応。</dd>
+<dt>0.4.5 (2012/6/4)</dt>
+<dd>OesText.printIconの指定方式をhtmlタグ込みの形に改めた。</dd>
+<dt>0.4.4 (2012/5/10)</dt>
+<dd>OesSound.canPlayTypeをMIME表記だけでなく拡張子表記も受け付けるようにした。</dd>
+<dt>0.4.3 (2012/5/10)</dt>
+<dd>サウンドの調整。</dd>
+<dt>0.4.2 (2012/5/6)</dt>
+<dd>内部的な調整および各種バグFix。</dd>
+<dt>0.4.1 (2012/5/4)</dt>
+<dd>セーブ／ロード時に子ノードの状況を保存／復帰できるようにした。<br>OesLabelクラスを追加。<br>Entity.autoSizeを追加。</dd>
+<dt>0.4.0 (2012/4/19)</dt>
+<dd>シナリオと章を、それぞれSceneとGroupクラスから継承する形に大きく改めた。</dd>
+<dt>0.3.4 (2012/4/16)</dt>
+<dd>バックログにhtmlタグを含むかどうかを指定できるようにした。</dd>
+<dt>0.3.3 (2012/4/10)</dt>
+<dd>非同期tweenに対応。</dd>
+<dt>0.3.2 (2012/4/8)</dt>
+<dd>サウンドのロードは自前でやるようにした。</dd>
+<dt>0.3.1 (2012/4/4)</dt>
+<dd>イメージとサウンドを複数ソース登録可能とし、かつ切り替えられるようにした。</dd>
+<dt>0.21 (2012/3/27)</dt>
+<dd>インライン選択肢の区切り文字を変更可能にした。</dd>
+<dt>0.2 (2012/3/23)</dt>
+<dd>プロトタイプ。</dd>
+</dl>
+
+</dd>
+</dl>
+
+<dl>
+<dt>oesUtil.enchant.js</dt>
+<dd>
+
+<dl>
+<dt>0.2.5 (2012/5/6)</dt>
+<dd>内部的な調整。</dd>
+<dt>0.2.4 (2012/5/4)</dt>
+<dd>oes.enchant.jsの変更に伴う調整。</dd>
+<dt>0.2.3 (2012/4/19)</dt>
+<dd>バグFix。</dd>
+<dt>0.2.2 (2012/4/16)</dt>
+<dd>oes.enchant.jsの変更に伴う調整。</dd>
+<dt>0.2.1 (2012/4/10)</dt>
+<dd>プレイ開始時のロードと、プレイ途中からのロードを別扱いできるようにした。「全削除」はプレイ開始時のみ可能にした。</dd>
+<dt>0.2.0 (2012/4/4)</dt>
+<dd>ロード時に「全削除」に対応。</dd>
+<dt>0.11 (2012/3/25)</dt>
+<dd>ロード時に「はじめから」に対応。</dd>
+<dt>0.1 (2012/3/20)</dt>
+<dd>プロトタイプ。</dd>
+</dl>
+
+</dd>
+</dl>
+
+</body>
+</html>
