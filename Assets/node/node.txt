@@ -1,0 +1,1 @@
+友希あいね[labelloc=b,fontsize = 18,image="image\aine.png", label=" 友希あいね", shape=plaintext,href="https://dic.pixiv.net/a/%E5%8F%8B%E5%B8%8C%E3%81%82%E3%81%84%E3%81%AD"];

@@ -1,0 +1,55 @@
+digraph graph_name {	
+	  graph [
+	    charset = "UTF-8",
+	    //rankdir = LR,
+	    margin = 0.2
+	    label = "sample graph",
+	    labelloc = "t",
+	    labeljust = "c",
+	    fontcolor = white,
+	    fontsize = 18,
+	  ];
+	  node [
+	    shape = box,
+	    fontname = "Migu 1M",
+	    fontsize = 12,
+	    //style = "solid, filled",
+	  ];
+	
+	
+		 　
+	
+	   鹿目まどか[labelloc=b, fontsize = 18,image="image\icon_madoka.png",fontsize = 18,labelloc=b, labell ="鹿目まどか", shape=plaintext];
+	
+	   暁美ほむら [labelloc=b, fontsize = 18,image="image\icon_homura.png", label=" 暁美ほむら", shape=plaintext];
+	
+	   巴マミ [labelloc=b, fontsize = 18,image="image\icon_mami.png", label="巴マミ", shape=plaintext];
+	
+	   美樹さやか [labelloc=b,  fontsize = 18,image="image\sayaka.jpg", label="美樹さやか", shape=plaintext];
+	キュウベエ[labelloc=b,  fontsize = 18,image="image\icon_qbe.png", label="キュウベエ", shape=plaintext];
+	
+	   佐倉杏子 [labelloc=b,  fontsize = 18,image="image\icon_kyoko.png", label="佐倉杏子", shape=plaintext];
+	
+
+	
+	   
+	 
+	   鹿目まどか -> 暁美ほむら  [fontname = ダミー,label = "ひどいけどいい人だよね？", href="http://ja.wikipedia.org/wiki/師弟" ];
+	   鹿目まどか -> 美樹さやか  [fontname = ダミー,label = "投擲（とうてき）", href="http://ja.wikipedia.org/wiki/師弟" ];
+	   暁美ほむら -> 鹿目まどか  [fontname = ダミー,label = "ストーキング", href="http://ja.wikipedia.org/wiki/師弟" ];
+	   美樹さやか -> キュウベエ [fontname = ダミー,label = "契約！！", href="http://ja.wikipedia.org/wiki/師弟" ];
+	   美樹さやか -> 佐倉杏子 [fontname = ダミー,label = "不許（ゆるすべからず）", href="http://ja.wikipedia.org/wiki/師弟" ];
+
+	   美樹さやか -> 巴マミ [fontname = ダミー,label = "強え！いい人！", href="http://ja.wikipedia.org/wiki/師弟" ];
+	   キュウベエ -> 美樹さやか  [fontname = ダミー,label = "契約！！", href="http://ja.wikipedia.org/wiki/師弟" ];
+	   暁美ほむら -> 巴マミ  [fontname = ダミー,label = "まどかは渡さない", href="http://ja.wikipedia.org/wiki/師弟" ];
+	   暁美ほむら -> 美樹さやか  [fontname = ダミー,label = "管理不行き届きにより処分予定", href="http://ja.wikipedia.org/wiki/師弟" ];
+   	美樹さやか -> 暁美ほむら  [fontname = ダミー,label = "嫌なヤツ", href="http://ja.wikipedia.org/wiki/師弟" ];
+  	巴マミ -> 暁美ほむら  [fontname = ダミー,label = "緊縛", href="http://ja.wikipedia.org/wiki/師弟" ];
+巴マミ -> 鹿目まどか  [fontname = ダミー,label = "死亡フラグ", href="http://ja.wikipedia.org/wiki/師弟" ];
+	   佐倉杏子 -> 美樹さやか[fontname = ダミー,label = "目障りだ死ねえ", href="http://ja.wikipedia.org/wiki/師弟" ];
+  佐倉杏子 -> 鹿目まどか[fontname = ダミー,label = "どうでもいい", href="http://ja.wikipedia.org/wiki/師弟" ];
+佐倉杏子 -> 巴マミ[fontname = ダミー,label = "うぜえ", href="http://ja.wikipedia.org/wiki/師弟" ];
+
+
+	 }
